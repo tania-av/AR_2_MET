@@ -29,12 +29,12 @@ addpath(genpath(pwd)) % add all subfolders to path
 
 %% load the data
 
-% %TRICLOSAN
-% b = readtable('data1.csv');
-% Genes
-% rownames = b.Names;
-% colnames = {'NAB' 'CAB_0.02' 'CAB_2.0'} %0, 0.02, 2.00 mg/L
-% fpkm = [b.NAB b.CAB_1 b.CAB_2]
+%TRICLOSAN
+b = readtable('data1.csv');
+Genes
+rownames = b.Names;
+colnames = {'NAB' 'CAB_0.02' 'CAB_2.0'} %0, 0.02, 2.00 mg/L
+fpkm = [b.NAB b.CAB_1 b.CAB_2]
 
 % %C. CAMPHORA
 % b = readtable('data2.csv');
@@ -43,12 +43,12 @@ addpath(genpath(pwd)) % add all subfolders to path
 % colnames = {'NAB' 'CAB_1' 'CAB_2' 'CAB_3' 'CAB_4'} %0, 0.02, 2.00 mg/L
 % fpkm = [b.NAB b.CAB_1 b.CAB_2 b.CAB_3 b.CAB_4]
 
-%TAT
-b = readtable('data4.csv');
-%Genes
-rownames = b.Names;
-colnames = {'NAB_M9' 'CAB_M9' 'NAB_M9T' 'CAB_M9T'} %0, 1.56mg/mL, 0, 1.56mg/mL
-fpkm = [b.NAB_M9 b.CAB_M9 b.NAB_M9T b.CAB_M9T]
+% %TAT
+% b = readtable('data4.csv');
+% %Genes
+% rownames = b.Names;
+% colnames = {'NAB_M9' 'CAB_M9' 'NAB_M9T' 'CAB_M9T'} %0, 1.56mg/mL, 0, 1.56mg/mL
+% fpkm = [b.NAB_M9 b.CAB_M9 b.NAB_M9T b.CAB_M9T]
 
 figflag = 1; % set figure flag: 1 to output and save density plot
 %% Data discretization
