@@ -29,19 +29,19 @@ addpath(genpath(pwd)) % add all subfolders to path
 
 %% load the data
 
-%TRICLOSAN
-b = readtable('data1.csv');
-Genes
-rownames = b.Names;
-colnames = {'NAB' 'CAB_0.02' 'CAB_2.0'} %0, 0.02, 2.00 mg/L
-fpkm = [b.NAB b.CAB_1 b.CAB_2]
-
-% %C. CAMPHORA
-% b = readtable('data2.csv');
-% %Genes
+% %TRICLOSAN
+% b = readtable('data1.csv');
+% Genes
 % rownames = b.Names;
-% colnames = {'NAB' 'CAB_1' 'CAB_2' 'CAB_3' 'CAB_4'} %0, 0.02, 2.00 mg/L
-% fpkm = [b.NAB b.CAB_1 b.CAB_2 b.CAB_3 b.CAB_4]
+% colnames = {'NAB' 'CAB_0.02' 'CAB_2.0'} %0, 0.02, 2.00 mg/L
+% fpkm = [b.NAB b.CAB_1 b.CAB_2]
+
+%C. CAMPHORA
+b = readtable('data2.csv');
+%Genes
+rownames = b.Names;
+colnames = {'NAB' 'CAB_1' 'CAB_2' 'CAB_3' 'CAB_4'} %0, 0.02, 2.00 mg/L
+fpkm = [b.NAB b.CAB_1 b.CAB_2 b.CAB_3 b.CAB_4]
 
 % %TAT
 % b = readtable('data4.csv');
